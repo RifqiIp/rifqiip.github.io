@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.content p{
+	font-weight: 300;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header.sticky{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo
+{
+	color: #FFF;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration-color: #008080;
+}
+header.sticky .logo{
+	color: #111;
+}
+header .logo span{
+	color: #008080;
+}
+header .navigation{
+	position: relative;
+	display: flex;
+}
+header .navigation li{
+	list-style: none;
+	margin-left: 15px;
+	border: 1px solid;
+	border-radius: 5px;
+	border: none;
+}
+header .navigation li:hover{
+	background-color: #1abc9c;
+}
+header .navigation li a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 300;
+	margin: 6px;
+	
+}
+header .navigation li a:hover{
+	color: #fff;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(-90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+	filter: hue-rotate(120deg);
+	animation: animate 10s linear infinite;
+}
+@keyframes animate{
+	0%{
+		filter: hue-rotate(0deg);
+	}
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+.banner .content{
+	max-width: 500px;
+	text-align: center;
+	margin-right: 70px;
+
+}
+.banner .content h2{
+	font-size: 3.5em;
+	color: white;
+	border: 1px solid #1abc9c;
+	width: 500px;
+
+}
+.banner .datetime{
+	color: #fff;
+	font-family: "segoe UI", sans-serif;
+	border: 1px solid #008080;
+	width: 400px;
+	padding: 100px 50px;
+	border-radius: 5px;
+	margin-right: 70px;
+}
+.date{
+	font-size: 20px;
+	font-weight: 220;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+.time{
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.time span{
+	position: relative;
+	margin: 0 2px;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.html{
+	padding-top: 5rem;
+}
+.html .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.html .titleText span{
+	color: #008080;
+
+}
+.html p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.cards{
+	text-align: center;
+	margin: 30px auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 4em 70px;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+iframe{
+	width: 320px;
+	height: 213px;
+	border-radius: 10px;
+}
+.css{
+	padding-top: 5rem;
+}
+.css .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.css .titleText span{
+	color: #008080;
+
+}
+.css p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.javascript{
+	padding-top: 5rem;
+}
+.javascript .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 600px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.javascript .titleText span{
+	color: #008080;
+
+}
+.javascript p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.php{
+	padding-top: 5rem;
+}
+.php .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.php .titleText span{
+	color: #008080;
+
+}
+.php p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.php .cards{
+	text-align: center;
+	margin: 30px auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 4em 70px;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.php .card{
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.php iframe{
+	width: 560px;
+	height: 315px;
+	border-radius: 10px;
+}
+.cplus{
+	padding-top: 5rem;
+}
+.cplus .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.cplus .titleText span{
+	color: #008080;
+
+}
+.cplus p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.cplus .cards{
+	text-align: center;
+	margin: 30px auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 4em 70px;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.cplus.card{
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.cplus iframe{
+	width: 560px;
+	height: 315px;
+	border-radius: 10px;
+}
+.python{
+	padding-top: 5rem;
+}
+.python .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 500px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.python .titleText span{
+	color: #008080;
+
+}
+.python p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.python .cards{
+	text-align: center;
+	margin: 30px auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 4em 70px;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.python .card{
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.python iframe{
+	width: 560px;
+	height: 315px;
+	border-radius: 10px;
+}
+.sql{
+	padding-top: 5rem;
+}
+.sql .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.sql .titleText span{
+	color: #008080;
+
+}
+.sql p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.sql .cards{
+	text-align: center;
+	margin: 30px auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 4em 70px;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.sql .card{
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.sql iframe{
+	width: 560px;
+	height: 315px;
+	border-radius: 10px;
+}
+.xml{
+	padding-top: 5rem;
+	padding-bottom: 10em;
+}
+.xml .titleText {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px;
+  background: linear-gradient(90deg, #1abc9c 0%, #008080 50%, #262626 50%, #607d8b 100% );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+.xml .titleText span{
+	color: #008080;
+
+}
+.xml p{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.xml .cards{
+	text-align: center;
+	margin: 30px auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 4em 70px;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.xml .card{
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.xml iframe{
+	width: 560px;
+	height: 315px;
+	border-radius: 10px;
+}
+.up a{
+	color: black;
+	text-decoration: none;
+}
+footer{
+	padding: 3em;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
